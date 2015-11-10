@@ -525,7 +525,7 @@ def parse_dot_data(data):
         
     except ParseException as err:
     
-        print err.line
-        print " "*(err.column-1) + "^"
-        print err
+        print(err.line)
+        print(" "*(err.column-1) + "^")
+        print(err)
         return None
